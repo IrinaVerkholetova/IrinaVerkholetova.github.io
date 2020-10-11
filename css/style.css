@@ -100,7 +100,7 @@ p{
         text-transform: uppercase;
     }
 
-    .button a:{
+    .button a{
         text-transform: uppercase;
     }
 
@@ -189,7 +189,7 @@ p{
     .skills h2{
         font-size: 38px;
         color: #666e83;
-        letter-spacing: ;
+        letter-spacing: 0.48;
     }
 
     .card-deck2{
@@ -214,7 +214,7 @@ p{
     .portfolio h2{
         font-size: 38px;
         color: #393939;
-        letter-spacing: ;
+        letter-spacing: 0.48;
     }
 
 
@@ -297,7 +297,7 @@ p{
     .get h2{
         font-size: 38px;
         color: #ffffff;
-        letter-spacing: ;
+        letter-spacing: 0.48;
     }
 
     textarea::placeholder {
