@@ -16,8 +16,7 @@
         <section class="navi sticky-top">
             <div class="container">
                 <div class="row nav">
-                    <div class="col-2 text-right">
-                        <!-- Логотип -->
+                    <div class="col-2">
                         <a class="navbar-brand" href="index.html">
                             <img src="img/logo.svg" alt="logo" loading="lazy">
                         </a>
@@ -27,13 +26,12 @@
                     </div> 
                     
                     <div class="col-6 menu">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-                        <!-- Бургер -->
-                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <nav class="navbar bg-primary navcolor navbar-expand-lg navbar-dark p-0">
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        <!-- Меню -->
-                            <div class="collapse navbar-collapse" id="navbarNav">
+
+                            <div class="collapse navbar-collapse " id="navbarNav">
                                 <ul class="navbar-nav w-100 justify-content-between">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
@@ -53,6 +51,7 @@
                                 </ul>
                             </div>
                         </nav>
+
                     </div>
                 </div>
             </div>
@@ -63,15 +62,14 @@
                 <div class="row">
                     <div class="col">
                         <h1 class="title">
-                            Всем привет! Мы новички в этом квартале <br> и создаем отличные веб-сайты и мобильные приложения
+                            Всем привет! Мы новички в этой сфере <br> и создаем отличные веб-сайты и мобильные приложения
                         </h1>
                     </div>
-                    <!-- <div class="col-1"></div> -->
                 </div>
 
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
+                <div class="row mx-auto text-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 mx-auto text-center">
                         <a href="#openModal" class="btn btn-lg button button1" data-toggle="modal" data-target="#staticBackdrop" data-target=".bd-example-modal-lg">
                             Начни работу с нами!
                         </a>
@@ -141,7 +139,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="col-4"></div>
+                    <div class="col-md-4"></div>
                 </div>
             </div>
         </section>
@@ -150,15 +148,15 @@
             <div class="container">
                     
                 <div class="row text-center mx-auto">
-                    <div class="col-2"></div>
-                    <div class="col-8">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
                         <h2 class="font-weight-bold mb-0">УСЛУГИ</h2>
                         <svg width="88" height="3">
                             <rect width="88" height="3" style="fill: rgb(0,0,0,0.15);stroke-width:3;stroke:rgb(0,0,0,0.15)"/>
                         </svg>
                         <p class="mt-2 subtitle">Мы работаем как с частными лицами, так и с предприятиями со всего мира, чтобы создавать отличные веб-сайты и приложения.</p>
                     </div>
-                    <div class="col-3"></div>
+                    <div class="col-md-3"></div>
                 </div>
     
                 <div class="row justify-content-between mt-4">
@@ -211,15 +209,15 @@
             <div class="container">
                     
                 <div class="row text-center mx-auto">
-                    <div class="col-3"></div>
-                    <div class="col-6">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
                         <h2 class="font-weight-bold mb-0">У НАС ЕСТЬ ОПЫТ!</h2>
                         <svg width="88" height="3">
                             <rect width="88" height="3" style="fill: rgb(0,0,0,0.15);stroke-width:3;stroke:rgb(0,0,0,0.15)" />
                         </svg>
                         <p class="mt-3 subtitle">Процентное отношение выполненных проектов наших клиентов в соответствии с решаемыми задачами.</p>
                     </div>
-                    <div class="col-3"></div>
+                    <div class="col-md-3"></div>
                 </div>
     
                 <div class="row justify-content-center mt-4">
@@ -289,22 +287,22 @@
             <div class="container">
                 
                 <div class="row text-center mx-auto">
-                    <div class="col-3"></div>
-                    <div class="col-6">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
                         <h2 class="font-weight-bold m-0">ПОРТФОЛИО</h2>
                         <svg width="88" height="3">
                             <rect width="88" height="3" style="fill: rgb(0,0,0,0.15);stroke-width:3;stroke:rgb(0,0,0,0.15)"/>
                         </svg>
                         <p class="mt-2 mb-4 subtitle">За малый срок мы внедрили более 9 проектов &#128513;: модернизация, сопровождение, дизайн, разработка.</p>
                     </div>
-                    <div class="col-3"></div>
+                    <div class="col-md-2"></div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div uk-filter="target: .js-filter">
 
-                        <div class="row text-center mb-5">
-                            <div class="col w-100 menunav uk-subnav uk-subnav-pill justify-content-center">
+                        <div class="row mx-auto justify-content-center mb-5">
+                            <div class="col-12 mt-1 w-100 menunav uk-subnav uk-subnav-pill justify-content-center">
                                 <a href="#" class="btn btn-secondary my-2 mx-2 uk-active" uk-filter-control>Все</a>
                                 <a href="#" class="btn btn-secondary my-2 mx-2" uk-filter-control="[data-color='sites']">Сайты</a>
                                 <a href="#" class="btn btn-secondary my-2 mx-2" uk-filter-control="[data-color='desing']">Дизайн</a>
