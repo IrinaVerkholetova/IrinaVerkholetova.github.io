@@ -230,7 +230,8 @@ p{
         text-align: center;
         font-size: 18px;
         font-weight: 500;
-        width: 86px;
+        width: 120px;
+        /* width: 86px; */
         height: 39px;
         padding: 5px;
         margin: 0;
