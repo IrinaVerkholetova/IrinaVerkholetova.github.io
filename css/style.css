@@ -1,33 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+
 .container-fluid{
     padding: 0;
 }
 
-h2{
-    padding-bottom: 10px;
+p{
+    font-size: 16px;
 }
 
-p{
-    padding-top: 10px;
+.navi{
+    background-color: #87509c;
+    color: #f7f3ea;
+    padding:0;
+    margin: 0;
 }
 
 .welcome{
     background-color: #87509c;
     color: #f7f3ea;
-    padding-bottom: 148px;
+    padding-bottom: 11%;
     /* height: 100%; */
 }
 
     .nav{
-        padding-top: 46px;
-        padding-bottom: 59px;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+
+    .navbar-brand{
+        width: 119px;
+        height: 37px;
     }
 
     .menu{
-        width: 422px;
+        width: 430px;
         height: 15px;
         color: #ffffff;
-        font-family: "Titillium Web";
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 422;
         line-height: 18.16px;
         text-transform: uppercase;
@@ -44,13 +53,30 @@ p{
         /* width: 917px; */
         /* height: 91px; */
         color: #f7f3ea;
-        font-family: "Titillium Web";
-        font-size: 43px;
+        font-size: 36px;
         font-weight: 700;
         line-height: 49px;
         text-align: center;
-        padding-top: 144px;
-        padding-bottom: 58px;
+        padding-top: 14%;
+        padding-bottom: 4%;
+    }
+
+    .contact-modal{
+        background-color: #643a79af;
+    }
+
+    .modal-header h5{
+        color: white;
+    }
+
+    .admodal{
+        color: white;
+    }
+    .admodal a{
+        color:white;
+    }
+    .admodal a:hover{
+        color:white;
     }
 
     .btn.focus{
@@ -59,10 +85,12 @@ p{
 
     .button{
         width: 85%;
-        padding-top: 6%;
-        padding-bottom: 6%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         justify-content: center;
         color: #f7f3ea;
+        font-size: 18px;
+        font-weight: bold;
         text-transform: uppercase;
     }
 
@@ -89,46 +117,113 @@ p{
 .services{
     background-color: #17c2a4;
     color: #f7f3ea;
-    padding-top: 117px;
-    padding-bottom: 132px;
+    font-size: 20px;
+    padding-top: 8%;
+    padding-bottom: 0;
 }
 
-    .card-deck{
-        padding-top: 75px;
+    .services h2{
+        color: #f7f3ea;
+        font-size: 36px;
+        /* padding-bottom: 0; */
+    }
+
+    .subtitle{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .card-deck1{
+        padding-top: 3%;
     }
 
     .card{
         background: none;
         border: 0;
-        text-align: center;
     }
+
+    .card-title1{
+        color: #f7f3ea;
+        font-size: 22px;
+        padding-top: 17%;
+    }
+
+    .flag{
+        width: 121px;
+        height: 130px;
+    }
+
+    .crayon{
+        width: 91px;
+        height: 130px;
+    }
+
+    .gears{
+        width: 161px;
+        height: 130px;
+    }
+
+    .rocket{
+        width: 97px;
+        height: 130px;
+    }
+
 
 .skills{
     background-color: #ffffff;
     color: #666e83;
-    padding-top: 117px;
-    padding-bottom: 117px;
+    padding-top: 8%;
+    padding-bottom: 3%;
 }
+
+    .skills h2{
+        font-size: 38px;
+        color: #666e83;
+        letter-spacing: ;
+    }
+
+    .card-deck2{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .card-title2{
+        color: #666e83;
+        font-size: 22px;
+    }
 
 .portfolio{
     background-color: #ffdd99;
     color: #393939;
     display: block;
     font-size: 18px;
-    padding-top: 117px;
-    padding-bottom: 117px;
+    padding-top: 8%;
+    padding-bottom: 6%;
 }
 
+    .portfolio h2{
+        font-size: 38px;
+        color: #393939;
+        letter-spacing: ;
+    }
+
+
     .menunav{
-        padding-bottom: 5%;
+        padding-bottom: 3%;
+        margin: 0;
     }
 
     .menunav a{
         background-color: #ebcb8d;
         color:#645c4d;
         border-color: #ebcb8d;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
         width: 86px;
         height: 39px;
+        padding: 5px;
+        margin: 0;
     }
 
     .menunav a:hover{
@@ -139,6 +234,13 @@ p{
     }
 
     .menunav a:focus{
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-radius: 4px;
+        color: #645c4d;
+    }
+
+    .menunav a:active{
         background-color: #ffffff;
         border-color: #ffffff;
         border-radius: 4px;
@@ -182,16 +284,46 @@ p{
     padding-bottom: 117px;
 }
 
-    .form-group{
-        padding-bottom: 52px;
+    .get h2{
+        font-size: 38px;
+        color: #ffffff;
+        letter-spacing: ;
     }
 
-    .form-control{
+    textarea::placeholder {
+        color: #ffffff;
+    }
+
+    .form-group{
+        padding-bottom: 6%;
+        color: #ffffff;
+    }
+
+    .text-write{
         background-color: #273a71;
         border-color: #273a71;
         color: #ffffff;
     }
+    /* input::placeholder{
+        content: ;
+        color: red;
+    }
+    textarea::placeholder{
+        color: red;
+    } */
 
+
+    address{
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 5%;
+    }
+    address a{
+        color: #ffffff;
+    }
+    address a:hover{
+        color: #ffffff;
+    }
 
     .button3{
         text-transform: uppercase;
@@ -201,35 +333,49 @@ p{
         -moz-box-shadow:    0px 9px 3px 0px rgba(41, 158, 197, 0.75);
         box-shadow:         0px 9px 3px 0px rgba(41, 158, 197, 0.75);
     }
-
     .button3:hover{
         color: #f7f3ea;
         background-color:#299ec5;
         border-color: #299ec5;
-        
     }
     .button3:focus{
         background-color:#30bae7;
         border-color: #30bae7;
     }
 
+.line{
+    background-color:#977ca2;
+    height: 1px;
+}
+
 .footer{
     background-color: #344b8e;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: bold;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
     .footer a{
         color: #ffffff;
-        font-family: "Titillium Web - Semi Bold";
         background: none;
         border:0;
-        padding-right: 6%;
+        padding-right: 2.4%;
+        padding-left: 2.4%;
     }
 
     .footer a:hover{
         color: #30bae7;
         text-decoration: none;
     }
+
+.name{
+    background-color: #344b8e;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+.name a{
+    color: #ffffff;
+}
