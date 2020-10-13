@@ -41,7 +41,7 @@ p{
         line-height: 18.16px;
         text-transform: uppercase;
         text-align: justify;
-        padding: 0;
+        padding: 1%;
     }
 
     .menu a:hover{
@@ -135,7 +135,7 @@ p{
     .services h2{
         color: #f7f3ea;
         font-size: 36px;
-        /* padding-bottom: 0; */
+        letter-spacing: 0.1em;
     }
 
     .subtitle{
@@ -189,7 +189,7 @@ p{
     .skills h2{
         font-size: 38px;
         color: #666e83;
-        letter-spacing: 0.48;
+        letter-spacing: 0.1em;
     }
 
     .card-deck2{
@@ -214,7 +214,7 @@ p{
     .portfolio h2{
         font-size: 38px;
         color: #393939;
-        letter-spacing: 0.48;
+        letter-spacing: 0.1em;
     }
 
 
@@ -266,7 +266,7 @@ p{
         box-shadow: none;
     }
 
-    /* .button2{
+    .button2{
         text-transform: uppercase;
         background-color:#17c2a4;
         border-color: #17c2a4;
@@ -284,7 +284,7 @@ p{
     .button2:focus{
         background-color:#17c2a4;
         border-color: #17c2a4;
-    } */
+    }
 
 
 .get{
@@ -298,22 +298,37 @@ p{
     .get h2{
         font-size: 38px;
         color: #ffffff;
-        letter-spacing: 0.48;
+        letter-spacing: 0.1em;
     }
 
-    textarea::placeholder {
-        color: #ffffff;
-    }
 
     .form-group{
         padding-bottom: 6%;
-        color: #ffffff;
     }
 
     .text-write{
         background-color: #273a71;
         border-color: #273a71;
-        color: #ffffff;
+        color: white;
+    }
+
+    .text-write2{
+        background-color: #87509c;
+        border-color: #87509c;
+        color: white;
+    }
+
+    input[type="text"]::placeholder { 
+        color: white;
+    } 
+    input[type="email"]::placeholder {
+        color: white;
+    } 
+    textarea.text-write::placeholder { 
+        color: white;
+    }
+    textarea.text-write2::placeholder { 
+        color: white;
     }
 
     address{
