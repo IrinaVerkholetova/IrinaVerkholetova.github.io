@@ -83,7 +83,7 @@ p{
         color:white;
     }
 
-    .btn.focus{
+    .btn:focus{
         box-shadow: none;
     }
 
