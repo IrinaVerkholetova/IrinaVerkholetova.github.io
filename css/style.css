@@ -183,7 +183,7 @@ p{
     background-color: #ffffff;
     color: #666e83;
     padding-top: 8%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
 
     .skills h2{
@@ -207,7 +207,7 @@ p{
     color: #393939;
     display: block;
     font-size: 18px;
-    padding-top: 8%;
+    padding-top: 9%;
     padding-bottom: 6%;
 }
 
@@ -221,6 +221,23 @@ p{
     .menunav{
         padding-bottom: 3%;
         margin: 0;
+    }
+    .uk-grid h6{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    ul{
+        list-style: none;
+    }
+
+    ul a:hover{
+        text-decoration: none;
+    }
+
+    .work_wrap a:hover{
+        background: #645c4d;
+        transform: scale(1.05);
+        /* text-align: center; */
     }
 
     .menunav a{
@@ -243,21 +260,18 @@ p{
         border-radius: 4px;
         color: #645c4d;
     }
-
     .menunav a:focus{
         background-color: #ffffff;
         border-color: #ffffff;
         border-radius: 4px;
         color: #645c4d;
     }
-
     .menunav a:active{
         background-color: #ffffff;
         border-color: #ffffff;
         border-radius: 4px;
         color: #645c4d;
     }
-
     .btn-secondary:focus{
         background-color: #ffffff;
         border-color: #ffffff;
@@ -265,11 +279,12 @@ p{
         color: #645c4d;
         box-shadow: none;
     }
-
+    
     .button2{
         text-transform: uppercase;
         background-color:#17c2a4;
         border-color: #17c2a4;
+        color: white;
         -webkit-box-shadow: 0px 9px 3px 0px rgba(20, 165, 140, 0.75);
         -moz-box-shadow:    0px 9px 3px 0px rgba(20, 165, 140, 0.75);
         box-shadow:         0px 9px 3px 0px rgba(20, 165, 140, 0.75);
@@ -291,8 +306,8 @@ p{
     background-color: #3c5499;
     color:#ffffff;
     display: block;
-    padding-top: 117px;
-    padding-bottom: 117px;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
     .get h2{
@@ -308,14 +323,21 @@ p{
 
     .text-write{
         background-color: #273a71;
-        border-color: #273a71;
         color: white;
     }
 
     .text-write2{
         background-color: #87509c;
-        border-color: #87509c;
         color: white;
+    }
+
+    .form-control.is-invalid{
+        border-color: transparent;
+        color: white;
+    }
+    .form-control.is-invalid:focus{
+        border-color: transparent;
+        color: black;
     }
 
     input[type="text"]::placeholder { 
