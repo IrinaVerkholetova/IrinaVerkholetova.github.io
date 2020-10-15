@@ -419,3 +419,7 @@ p{
 .name a{
     color: #ffffff;
 }
+.name a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
