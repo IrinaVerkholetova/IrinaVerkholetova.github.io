@@ -421,7 +421,9 @@ p{
     text-align: center;
 }
 .name a{
-    color: #ffffff;
+    color: white;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 .name a:hover{
     text-decoration: none;
