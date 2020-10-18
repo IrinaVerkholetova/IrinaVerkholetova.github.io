@@ -80,6 +80,31 @@ p{
         color:white;
     }
 
+    .button2{
+        text-transform: uppercase;
+        background-color:#17c2a4;
+        border-color: #17c2a4;
+        color: white;
+        -webkit-box-shadow: 7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+        -moz-box-shadow:    7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+        box-shadow:         7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+    }
+
+    .button2:hover{
+        color: #f7f3ea;
+        background-color:#14a58c;
+        border-color: #14a58c;
+        box-shadow: none;
+        
+    }
+    .button2:focus{
+        background-color:#17c2a4;
+        border-color: #17c2a4;
+        -webkit-box-shadow: 7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+        -moz-box-shadow:    7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+        box-shadow:         7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+    }
+
     .btn:focus{
         box-shadow: none;
     }
@@ -149,6 +174,15 @@ p{
         background: none;
         border: 0;
     }
+
+    .card{
+    transition: all .3s linear;
+    }
+
+    .card:hover{
+        transform: scale(1.2);
+    }
+
 
     .card-title1{
         color: #f7f3ea;
@@ -220,22 +254,6 @@ p{
         padding-bottom: 3%;
         margin: 0;
     }
-    .uk-grid h6{
-        font-weight: 500;
-        font-size: 16px;
-    }
-    ul{
-        list-style: none;
-    }
-
-    ul a:hover{
-        text-decoration: none;
-    }
-
-    .work_wrap a:hover{
-        background: #645c4d;
-        transform: scale(1.05);
-    }
 
     .menunav a{
         background-color: #ebcb8d;
@@ -275,30 +293,25 @@ p{
         color: #645c4d;
         box-shadow: none;
     }
-    
-    .button2{
-        text-transform: uppercase;
-        background-color:#17c2a4;
-        border-color: #17c2a4;
-        color: white;
-        -webkit-box-shadow: 7px 7px 5px 0px rgba(20, 165, 140, 0.75);
-        -moz-box-shadow:    7px 7px 5px 0px rgba(20, 165, 140, 0.75);
-        box-shadow:         7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+
+    .uk-grid h6{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    ul{
+        list-style: none;
     }
 
-    .button2:hover{
-        color: #f7f3ea;
-        background-color:#14a58c;
-        border-color: #14a58c;
-        box-shadow: none;
-        
+    ul a:hover{
+        text-decoration: none;
     }
-    .button2:focus{
-        background-color:#17c2a4;
-        border-color: #17c2a4;
-        -webkit-box-shadow: 7px 7px 5px 0px rgba(20, 165, 140, 0.75);
-        -moz-box-shadow:    7px 7px 5px 0px rgba(20, 165, 140, 0.75);
-        box-shadow:         7px 7px 5px 0px rgba(20, 165, 140, 0.75);
+
+    .uk-card{
+        transition: all .3s linear;
+    }
+    
+    .uk-card:hover{
+        transform: scale(1.2);
     }
 
 

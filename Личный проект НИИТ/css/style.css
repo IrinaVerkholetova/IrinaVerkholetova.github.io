@@ -1,0 +1,217 @@
+.container-fluid{
+  padding: 0;
+  background-image: url(../img/fon1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation{
+  background-color: rgba(44, 122, 131, 0.583);
+  color: #f7f3ea;
+  padding: 0;
+  margin: 0;
+}
+
+  .menu{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 422;
+    line-height: 18.16px;
+    text-transform: uppercase;
+    text-align: justify;
+  }
+  .bg-primary{
+    background-color: transparent !important;
+  }
+  .shadows{
+    -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+  }
+  .menu a:hover{
+    background-color: rgb(41, 141, 141);
+    -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+  }
+  .menu a:active{
+    background-color: rgb(191, 167, 189);
+  }
+
+
+.firstpage{
+  height: 100vh;
+}
+  .title{
+    text-align: center;
+    color:  white;
+    font-weight: 500;
+  }
+
+  h1{
+    color: white !important;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .arrow {
+    position: absolute;
+    top: 90%;
+    margin-left: -8 px;
+  }
+  .align-items-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+  }
+
+
+.aboutme{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.uk-card{
+  background-color: rgba(44, 122, 131, 0.583) !important;
+  -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.58)!important;
+  -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.58)!important;
+  box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.58)!important;
+}
+
+.uk-card-default {
+  color: white !important;
+}
+.uk-card-title {
+  color: white !important;
+}
+
+.websites{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+  h2{
+    color: rgb(41, 141, 141) !important;
+    text-align: center;
+  }
+  .websites p{
+    color:rgb(41, 141, 141) !important;
+    text-align: center;
+  }
+  .transform{
+    background-color: rgba(44, 122, 131, 0.583);
+    transition: all .3s linear;
+    
+  }
+  .transform:hover{
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  .uk-position-center-left{
+    color: black !important;
+  }
+  .uk-position-center-right{
+    color: black !important;
+  }
+  .uk-h5{
+    color: white !important;
+  }
+
+
+.development{
+  /* background-color: rgb(161, 75, 151); */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+  .color_progress{
+    background-color: rgb(41, 141, 141);
+  }
+
+  .technology{
+    background-image: url(../img/technology.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 90%;
+  }
+
+  iframe{
+    width: 100%;
+    -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+    box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.58);
+  }
+
+  .form-contact{
+      background-color: rgb(41, 141, 141);
+      color: white !important;
+  }
+  .form-control{
+    border-color: transparent;
+    color: white;
+  }
+  .form-control:focus{
+    color: black !important;
+    box-shadow: none !important;
+  }
+  input[type="text"]::placeholder { 
+    color: white;
+  } 
+  input[type="email"]::placeholder {
+    color: white;
+  } 
+  textarea.form-contact::placeholder { 
+    color: white;
+  }
+
+  .btn:active{
+    box-shadow: none !important;
+  }
+  .btn-primary:active{
+    background-color: rgb(41, 141, 141) !important;
+    border-color: rgb(41, 141, 141) !important;
+  }
+  .button{
+    text-transform: uppercase;
+    width: 80%;
+    color: #f7f3ea !important;
+    text-transform: uppercase;
+    padding: 2% 0 2% 0;
+    border-color: rgb(41, 141, 141);
+    background-color: rgb(41, 141, 141);
+      -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+      -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+      box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+  }
+  .button:hover{
+    background-color: rgb(41, 141, 141);
+    border-color: rgb(41, 141, 141);
+    box-shadow: none;
+  }
+  .button:focus{
+    background-color: rgb(41, 141, 141);
+    border-color: rgb(41, 141, 141);
+      -webkit-box-shadow: 9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+      -moz-box-shadow:    9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+      box-shadow:         9px 9px 15px 0px rgba(48, 48, 48, 0.85);
+  }
+
+  .picture{
+  background-image: url(../img/fon7.jpg);
+  background-size: cover;
+  height: 50vh;
+  width: 90%;
+  padding-top: 6%;
+  padding-left: 6%
+  }
+
+  .picture-img img{
+    width: 200px;
+  }
+
+
+.footer{
+  background-color: rgba(44, 122, 131, 0.583);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  color: white;
+}
+.footer a{
+  padding: 5%;
+}
