@@ -1,13 +1,7 @@
-$('.scrollto a').on('click', function() {
-
-    let href = $(this).attr('href');
-
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+   
     $('html, body').animate({
-        scrollTop: $(href).offset().top
-    }, {
-        duration: 1400,   // по умолчанию «400» 
-        easing: "linear" // по умолчанию «swing» 
-    });
-
-    return false;
-});
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500, 'linear');
+  });

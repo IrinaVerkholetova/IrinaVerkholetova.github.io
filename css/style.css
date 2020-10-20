@@ -67,6 +67,19 @@ p{
     .modal-header h4{
         color: white;
     }
+    .modal-backdrop.show{
+        opacity: 0 !important;
+    }
+    .modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        outline: 0;
+    }
     .admodal{
         color: white;
     }
@@ -413,4 +426,8 @@ p{
         color: white;
         padding-right: 3%;
         padding-left: 3%;
+    }
+
+    .modal-backdrop.show {
+        opacity: 0 !important;
     }
