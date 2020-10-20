@@ -14,26 +14,15 @@ p{
     padding:0;
     margin: 0;
 }
-
-.welcome{
-    background-color: #87509c;
-    color: #f7f3ea;
-    padding-bottom: 10%;
-}
-
     .nav{
         padding-top: 1%;
-        padding-bottom: 3%;
+        padding-bottom: 1%;
     }
-
     .navbar-brand{
         width: 119px;
         height: 37px;
     }
-
     .menu{
-        width: 430px;
-        height: 15px;
         color: #ffffff;
         font-size: 16px;
         font-weight: 422;
@@ -42,16 +31,26 @@ p{
         text-align: justify;
         padding: 1%;
     }
-
     .menu a:hover{
         background-color: #643a79;
         border-radius: 4px;
     }
-
     .bg-primary{
-        background-color: #87509c !important;
+        background-color: transparent !important;
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse{
+            background-color: #eb7d4b;
+        }
     }
 
+
+.welcome{
+    background-color: #87509c;
+    color: #f7f3ea;
+    /* padding-bottom: 10%; */
+    height: 100vh;
+}
     .title{
         color: #f7f3ea;
         font-size: 36px;
@@ -65,11 +64,9 @@ p{
     .contact-modal{
         background-color: #643a79ee;
     }
-
     .modal-header h4{
         color: white;
     }
-
     .admodal{
         color: white;
     }
@@ -89,7 +86,6 @@ p{
         -moz-box-shadow:    7px 7px 5px 0px rgba(20, 165, 140, 0.75);
         box-shadow:         7px 7px 5px 0px rgba(20, 165, 140, 0.75);
     }
-
     .button2:hover{
         color: #f7f3ea;
         background-color:#14a58c;
@@ -108,7 +104,6 @@ p{
     .btn:focus{
         box-shadow: none;
     }
-
     .button{
         width: 87%;
         padding: 6% 0 6% 0;
@@ -118,11 +113,9 @@ p{
         font-weight: bold;
         text-transform: uppercase;
     }
-
     .button a{
         text-transform: uppercase;
     }
-
     .button1{
         background-color: #eb7d4b;
         border-color: #eb7d4b;
@@ -130,13 +123,11 @@ p{
         -moz-box-shadow:    7px 7px 5px 0px rgba(200, 106, 24, 0.75);
         box-shadow:         7px 7px 5px 0px rgba(200, 106, 24, 0.75);
     }
-
     .button1:hover{
         color: #f7f3ea;
         background-color:#c86a40;
         border-color: #c86a40;
         box-shadow: none;
-        
     }
     .button1:focus{
         background-color:#eb7d4b;
@@ -154,57 +145,45 @@ p{
     padding-top: 6%;
     padding-bottom: 6%;
 }
-
     .services h2{
         color: #f7f3ea;
         font-size: 36px;
         letter-spacing: 0.1em;
     }
-
     .subtitle{
         font-size: 18px;
         font-weight: 500;
     }
-
     .card-deck1{
         padding-top: 3%;
     }
-
     .card{
         background: none;
         border: 0;
     }
-
     .card{
-    transition: all .3s linear;
+        transition: all .3s linear;
     }
-
     .card:hover{
         transform: scale(1.2);
     }
-
-
     .card-title1{
         color: #f7f3ea;
         font-size: 22px;
         padding-top: 17%;
     }
-
     .flag{
         width: 121px;
         height: 130px;
     }
-
     .crayon{
         width: 91px;
         height: 130px;
     }
-
     .gears{
         width: 161px;
         height: 130px;
     }
-
     .rocket{
         width: 97px;
         height: 130px;
@@ -217,22 +196,20 @@ p{
     padding-top: 6%;
     padding-bottom: 6%;
 }
-
     .skills h2{
         font-size: 38px;
         color: #666e83;
         letter-spacing: 0.1em;
     }
-
     .card-deck2{
         padding-top: 0;
         padding-bottom: 0;
     }
-    
     .card-title2{
         color: #666e83;
         font-size: 22px;
     }
+
 
 .portfolio{
     background-color: #ffdd99;
@@ -242,19 +219,21 @@ p{
     padding-top: 6%;
     padding-bottom: 6%;
 }
-
     .portfolio h2{
         font-size: 38px;
         color: #393939;
         letter-spacing: 0.1em;
     }
-
+    @media (max-width: 300px) {
+        .portfolio h2{
+            font-size: 30px;
+        }
+    }
 
     .menunav{
         padding-bottom: 3%;
         margin: 0;
     }
-
     .menunav a{
         background-color: #ebcb8d;
         color:#645c4d;
@@ -267,7 +246,6 @@ p{
         padding: 5px;
         margin: 0;
     }
-
     .menunav a:hover{
         background-color: #ffffff;
         border-color: #ffffff;
@@ -298,18 +276,18 @@ p{
         font-weight: 500;
         font-size: 16px;
     }
+    .uk-grid>* {
+        padding-left: 0px !important;
+    }
     ul{
         list-style: none;
     }
-
     ul a:hover{
         text-decoration: none;
     }
-
     .uk-card{
         transition: all .3s linear;
     }
-    
     .uk-card:hover{
         transform: scale(1.2);
     }
@@ -322,28 +300,22 @@ p{
     padding-top: 6%;
     padding-bottom: 6%;
 }
-
     .get h2{
         font-size: 38px;
         color: #ffffff;
         letter-spacing: 0.1em;
     }
-
-
     .form-group{
         padding-bottom: 6%;
     }
-
     .text-write{
         background-color: #273a71;
         color: white;
     }
-
     .text-write2{
         background-color: #87509c;
         color: white;
     }
-
     .form-control.is-invalid{
         border-color: transparent;
         color: white;
@@ -352,7 +324,6 @@ p{
         border-color: transparent;
         color: black;
     }
-
     input[type="text"]::placeholder { 
         color: white;
     } 
@@ -400,10 +371,12 @@ p{
         box-shadow:         7px 7px 5px 0px rgba(41, 158, 197, 0.75);
     }
 
+
 .line{
     background-color:#977ca2;
     height: 1px;
 }
+
 
 .footer{
     background-color: #344b8e;
@@ -413,7 +386,6 @@ p{
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
     .footer a{
         color: #ffffff;
         background: none;
@@ -421,11 +393,11 @@ p{
         padding-right: 2.4%;
         padding-left: 2.4%;
     }
-
     .footer a:hover{
         color: #30bae7;
         text-decoration: none;
     }
+
 
 .name{
     background-color: #344b8e;
@@ -433,12 +405,12 @@ p{
     font-size: 18px;
     text-align: center;
 }
-.name a{
-    color: white;
-    padding-right: 3%;
-    padding-left: 3%;
-}
-.name a:hover{
-    text-decoration: none;
-    color: #ffffff;
-}
+    .name a:hover{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .links a{
+        color: white;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
