@@ -102,18 +102,17 @@
   .websites p{
     color:rgb(41, 141, 141) !important;
     text-align: center;
-  }
-  .transform{
-    background-color: rgba(44, 122, 131, 0.8);
-    transition: all .3s linear;
-  }
+  } 
   .uk-grid {
     margin-left: 0px !important;
   }
   .uk-grid>* {
     padding-left: 0px !important;
-}
-
+  }
+  .transform{
+    background-color: rgba(44, 122, 131, 0.8);
+    transition: all .3s linear;
+  }
   .transform:hover{
     transform: scale(1.5);
     z-index: 1;
@@ -147,7 +146,6 @@
     background-image: url(../img/technology.jpg);
     background-size: cover;
     height: 50vh;
-    width: 90%;
   }
 
   iframe{
@@ -215,7 +213,6 @@
   background-image: url(../img/fon7.jpg);
   background-size: cover;
   height: 50vh;
-  width: 90%;
   padding-top: 6%;
   padding-left: 6%
   }
