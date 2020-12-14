@@ -265,7 +265,6 @@ let animation = buttonPlayGame.addEventListener("click", gameStartPlay, true);
 
 function gameStartPlay() {
     loopGame();
-    restart();
     audioStart.play();
 }
 
@@ -353,7 +352,6 @@ document.addEventListener('keydown', function (event) {
     switch (event.code) {
         case 'Enter':
             loopGame();
-            restart();
             break;
         case 'ArrowLeft': // LEFT ARROW
             const colLeft = activeFigure.col - 1;
