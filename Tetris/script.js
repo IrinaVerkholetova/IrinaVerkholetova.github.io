@@ -286,6 +286,7 @@ buttonStopGame.addEventListener("click", showGameOver, true);
 function showGameOver() {
     cancelAnimationFrame(gameStart); // выкл анимацию
     gameOver = true;
+    audioStart.pause();
     instruction();
     context.fillText('GAME OVER', canvas.width / 2, canvas.height / 2);
     let audioGameOver = document.querySelector('#gameover audio');
