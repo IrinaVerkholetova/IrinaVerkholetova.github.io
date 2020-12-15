@@ -1,11 +1,11 @@
 "use strict";
 const canvas = document.querySelector('#canvas-container');
 const context = canvas.getContext('2d');
-const square = 24; // размер клетки
+const square = 24; // размер клетки поля
 const rows = 20; // число строк поля
 const columns = 10; // число колонок поля
-let count = 0; // счетчик
-let speed = 20; // стартовая скорость
+let counterFPS = 0; // счетчик кадров/сек — FPS(Frames Per Second)
+let speed = 20; // стартовая скорость 20 кадров/сек
 let gameStart = null; // старт игры
 let gameOver = false; // конец игры, неактив на старте
 
@@ -99,33 +99,27 @@ function createFigure() { // создаем фигуру
 let activeFigure = createFigure();
 let nextFigure = createFigure();
 
-function rotateFigure(matrix) { // поворот матрицы
-    const n = matrix.length - 1;
-    for (let row = 0; row < n; row++) {
-        for (let col = row; col < n - row; col++) {
-            const transposed = matrix[row][col];
-            matrix[row][col] = matrix[n - col][row];
-            matrix[n - col][row] = matrix[n - row][n - col];
-            matrix[n - row][n - col] = matrix[col][n - row];
-            matrix[col][n - row] = transposed;
-        }
-    }
-    return matrix;
+
+function rotateFigure(matrix) { // создаёт новый массив с результатом вызова функции для каждого элемента массива
+    const N = matrix.length - 1; // т.к. номер последний ряд(столбец) квадратной матрицы на 1 меньше
+    let rotateFigire = matrix.map((row, j) => row.map((value, i) => matrix[N - i][j]));
+    return rotateFigire; // на входе матрица, и на выходе новая матрица
 }
 
 function outOfBounds(matrix, cellRow, cellCol) { // выход за границы поля
+    let canShift = true;
     for (let row = 0; row < matrix.length; row++) { // отслеживаем фигуру
         for (let col = 0; col < matrix[row].length; col++) {
             if (matrix[row][col] &&
                 (((playfield[cellRow + row] === undefined) || // выход за границы
                         (playfield[cellRow + row][cellCol + col] === undefined)) || // выход влево, вправо
                     playfield[cellRow + row][cellCol + col]) // пересечение с другой фигурой
-                ) {
-                return false; // дальше двигаться нельзя
+            ) {
+                canShift = false; // дальше двигаться нельзя
             }
         }
     }
-    return true; // всё хорошо, двигаемся
+    return canShift; // всё хорошо, двигаемся
 }
 
 function placeFigure() { // фиксация фигуры
@@ -295,7 +289,8 @@ function showGameOver() {
 }
 
 function loopGame() {
-    gameStart = requestAnimationFrame(loopGame); // начинаем анимацию
+    // начинаем анимацию, вызов callback loop, позволяет запланировать исполнение кода перед следующей перерисовкой интерфейса без увеличения нагрузки на систему
+    gameStart = requestAnimationFrame(loopGame);
     context.clearRect(0, 0, canvas.width, canvas.height); // очищаем холст
     createGrid(context); // рисуем сетку
     showNextFigure();
@@ -309,9 +304,10 @@ function loopGame() {
         }
     }
     if (activeFigure) { // активная фигура, если она отсутствует, то будет ложь undefined
-        if (count++ > speed) {
+        // когда задача завершена, идентификатор обратного вызова кадра анимации увеличивается на единицу
+        if (counterFPS++ > speed) { // визуализация до максимальной кадровой частоты fps
             activeFigure.row++; // двигаемся вниз
-            count = 0; // счетчик
+            counterFPS = 0; // счетчик
             if (!outOfBounds(activeFigure.matrix, activeFigure.row, activeFigure.col)) {
                 activeFigure.row--;
                 placeFigure();
@@ -353,37 +349,37 @@ function restart() {
 
 document.addEventListener('keydown', function (event) {
     switch (event.code) {
-        case 'Enter':
+        case 'Enter': // запуск игры
             loopGame();
             break;
-        case 'ArrowLeft': // LEFT ARROW
-            const colLeft = activeFigure.col - 1;
+        case 'ArrowLeft': // сдвиг влево
+            const colLeft = activeFigure.col - 1; // шаг влево
             if (outOfBounds(activeFigure.matrix, activeFigure.row, colLeft)) {
-                activeFigure.col = colLeft;
+                activeFigure.col = colLeft; // можно? запоминаем
             }
             break;
-        case 'ArrowUp': // UP ARROW
-            const matrix = rotateFigure(activeFigure.matrix);
+        case 'ArrowUp': // поворот фигуры
+            const matrix = rotateFigure(activeFigure.matrix); // поворачиваем
             if (outOfBounds(matrix, activeFigure.row, activeFigure.col)) {
-                activeFigure.matrix = matrix;
+                activeFigure.matrix = matrix; // можно повернуть? запоминаем
             }
             break;
-        case 'ArrowRight': // RIGHT ARROW
-            const colRight = activeFigure.col + 1;
+        case 'ArrowRight': // сдвиг вправо
+            const colRight = activeFigure.col + 1; // шаг вправо
             if (outOfBounds(activeFigure.matrix, activeFigure.row, colRight)) {
-                activeFigure.col = colRight;
+                activeFigure.col = colRight; // можно? запоминаем
             }
             break;
-        case 'ArrowDown': // DOWN ARROW
-            const row = activeFigure.row + 1;
+        case 'ArrowDown': // ускорить падение фигуры
+            const row = activeFigure.row + 1; // шаг вниз
             if (!outOfBounds(activeFigure.matrix, row, activeFigure.col)) {
-                activeFigure.row = row - 1;
-                placeFigure();
+                activeFigure.row = row - 1; // если некуда вниз, то запоминаем
+                placeFigure(); // проверка на место, заполн ряды, вызов след фигуры
                 return;
             }
-            activeFigure.row = row;
+            activeFigure.row = row; // запоминаем строку, куда встала фигура
             break;
-        case 'Space':
+        case 'Space': // пауза
             showGamePause();
             break;
     }
